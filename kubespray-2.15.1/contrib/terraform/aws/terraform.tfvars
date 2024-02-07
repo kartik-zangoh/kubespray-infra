@@ -7,9 +7,7 @@ aws_cidr_subnets_private = ["10.250.192.0/20", "10.250.208.0/20"]
 aws_cidr_subnets_public  = ["10.250.224.0/20", "10.250.240.0/20"]
 
 #Bastion Host
-aws_bastion_num  = 1
 aws_bastion_size = "t2.medium"
-
 
 #Kubernetes Cluster
 
@@ -19,7 +17,7 @@ aws_kube_master_size = "t2.medium"
 aws_etcd_num  = 1
 aws_etcd_size = "t2.medium"
 
-aws_kube_worker_num  = 1
+aws_kube_worker_num  = 3
 aws_kube_worker_size = "t2.medium"
 
 #Settings AWS ELB
